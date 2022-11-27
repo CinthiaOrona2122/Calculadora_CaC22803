@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button class="col-2" onclick="display.borrarUltimo()">&#8592;</button>
+            <button class="operador" value="MR" onclick="display.MR()">MR</button>
+            <button class="operador" value="MC" onclick="display.MC()">MC</button>
+            <button class="operador" value="log2" onclick="display.log2()">Log<sup>2</sup></button>
+            <button class="operador" value="cos">Cos</button>
+            <button class="operador" value="sin">Sin</button>
+            <button class="operador" value="tg" onclick="display.tg()">Tg</button>
+            <button class="operador" value="pi" onclick="display.pi()">&#960;</button>
+            <button class="operador" value="MS" onclick="display.MS()">MS</button>
+            <button class="operador" onclick="display.borrarAnterior()">&#8594;</button>
+            <button class="operador" value="ln" onclick="display.ln()">Ln</button>
+            <button class="operador" value="e">e</button>
+            <button class="operador" value="potencia2" onclick="display.potencia2()">X<sup>2</sup></button>
+            <button class="operador" value="potencia3" onclick="display.potencia3()">X<sup>3</sup></button>
+            <button class="operador" value="potenciaN" onclick="display.potenciaN()">X<sup>n</sup></button>
+            <button class="operador" value="X!">X!</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="raiz3" onclick="display.raiz3()">&#8730;<sup>3</sup></button>
+            <button class="operador" value="raizN" onclick="display.raizN()">&#8730;<sup>n</sup></button>
+            <button class="operador" value="dividir">&#247;</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="multiplicar">&#215;</button>
+            <button class="operador" value="raiz2" onclick="display.raiz2()">&#8730;<sup>2</sup></button>
+            <button class="operador" value="restar">&#8722;</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="col-2 operador" value="sumar"><b>&#43;</b></button>
+            <button class="numero">.</button>
+            <button class="col-2 numero">0</button>
+            <button class="operador" value="porcentaje" onclick="display.porcentaje()">&#37;</button>
+            <button class="col-2 operador" value="igual">=</button>
+        </div>
+    </div>    
+</body>
+
+</html>
